@@ -1,6 +1,7 @@
 package servlet;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import controller.ItemController;
 import exceptions.BadRequestException;
 import exceptions.NotFoundException;
 import model.Item;
