@@ -3,17 +3,17 @@ package servlet;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import controller.ItemController;
 import exceptions.BadRequestException;
+import exceptions.EntityNotFoundException;
 import exceptions.NotFoundException;
 import model.Item;
 import org.hibernate.HibernateException;
 
-import javax.persistence.EntityNotFoundException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/test")
+//@WebServlet(urlPatterns = "/test")
 public class FirstServlet extends javax.servlet.http.HttpServlet {
 
     private ItemController itemController = new ItemController();
