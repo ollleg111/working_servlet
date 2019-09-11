@@ -37,12 +37,12 @@ public class Item {
     public Item() {
     }
 
-    public Item(String name, Date dateCreated, Date lastUpdateDate, String description) {
-        this.name = name;
-        this.dateCreated = dateCreated;
-        this.lastUpdateDate = lastUpdateDate;
-        this.description = description;
-    }
+//    public Item(String name, Date dateCreated, Date lastUpdateDate, String description) {
+//        this.name = name;
+//        this.dateCreated = dateCreated;
+//        this.lastUpdateDate = lastUpdateDate;
+//        this.description = description;
+//    }
 
     @Id
     @SequenceGenerator(name = "IT_SEQ", sequenceName = "ITEM_SEQ", allocationSize = 1)
