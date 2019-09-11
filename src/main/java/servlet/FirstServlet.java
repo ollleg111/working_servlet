@@ -58,7 +58,7 @@ public class FirstServlet extends javax.servlet.http.HttpServlet {
             Item item = mapper.readValue(req.getReader(), Item.class);;
             itemController.update(item);
         } catch (NotFoundException e) {
-            resp.getWriter().println("not found " + e.getMessage() + " in method doGet");
+            resp.getWriter().println("not found " + e.getMessage() + " in method doPut");
         }
 
 //        try {
@@ -86,7 +86,7 @@ public class FirstServlet extends javax.servlet.http.HttpServlet {
             Item item = mapper.readValue(req.getReader(), Item.class);;
             itemController.create(item);
         } catch (NotFoundException e) {
-            resp.getWriter().println("not found " + e.getMessage() + " in method doGet");
+            resp.getWriter().println("not found " + e.getMessage() + " in method doPost");
         }
 //        try {
 //            Item item = getItem(req);
@@ -113,7 +113,7 @@ public class FirstServlet extends javax.servlet.http.HttpServlet {
             long id = Long.parseLong(req.getParameter("id"));
             itemController.delete(id);
         } catch (NotFoundException e) {
-            resp.getWriter().println("not found " + e.getMessage() + " in method doGet");
+            resp.getWriter().println("not found " + e.getMessage() + " in method doDelete");
         }
 
 //        try {
